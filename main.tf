@@ -24,6 +24,6 @@ resource "ansible_host" "salt-proxy" {
   vars = {
     wait_connection_timeout   = 60
     proxy_private_ip          = "60.205.176.114"
-    proxy_docker_tag          = var.proxy_docker_tag
+    proxy_docker_tag          = "tag"
   }
 }
