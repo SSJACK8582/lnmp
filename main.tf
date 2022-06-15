@@ -4,8 +4,13 @@ terraform {
       source = "aliyun/alicloud"
       version = "1.99.0"
     }
+    ansible = {
+      source = "nbering/ansible"
+      version = "1.0.4"
+    }
   }
 }
+
 resource "ansible_host" "salt-proxy" {
   count = 1
 
