@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    alicloud = {
+      source = "aliyun/alicloud"
+      version = "1.99.0"
+    }
+  }
+}
 resource "ansible_host" "salt-proxy" {
   count = 1
 
